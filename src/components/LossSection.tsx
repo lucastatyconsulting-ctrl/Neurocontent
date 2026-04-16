@@ -11,7 +11,7 @@ const losses = [
 
 export function LossSection() {
   return (
-    <section className="py-24 px-6 lg:px-12 max-w-5xl mx-auto relative z-10">
+    <section className="py-16 md:py-20 px-6 lg:px-12 max-w-5xl mx-auto relative z-10">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -40 }}

@@ -24,8 +24,8 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-32 px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
-      <div className="text-center mb-24">
+    <section id="services" className="py-16 md:py-20 px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
+      <div className="text-center mb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

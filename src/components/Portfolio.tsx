@@ -52,8 +52,8 @@ export function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<ProjectInfo | null>(null);
 
   return (
-    <section id="portfolio" className="py-24 px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
-      <div className="text-center mb-16">
+    <section id="portfolio" className="py-16 md:py-20 px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
+      <div className="text-center mb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

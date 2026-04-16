@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export function Diagnostic() {
   return (
-    <section className="py-24 px-6 lg:px-12 max-w-4xl mx-auto relative z-10 text-center">
+    <section className="py-16 md:py-20 px-6 lg:px-12 max-w-4xl mx-auto relative z-10 text-center">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

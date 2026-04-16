@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export function Strategist() {
   return (
-    <section className="py-24 px-6 lg:px-12 max-w-5xl mx-auto relative z-10">
+    <section className="py-16 md:py-20 px-6 lg:px-12 max-w-5xl mx-auto relative z-10">
       <div className="grid md:grid-cols-12 gap-12 items-center">
         
         <motion.div 
