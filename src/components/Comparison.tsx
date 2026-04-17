@@ -17,7 +17,7 @@ const us = [
 
 export function Comparison() {
   return (
-    <section className="py-16 md:py-20 px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
+    <section className="py-8 md:py-12 px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
       <div className="text-center mb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

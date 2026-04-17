@@ -21,7 +21,7 @@ export default function App() {
       
       <Hero />
       
-      <div className="space-y-12 md:space-y-24 pb-12">
+      <div className="space-y-6 md:space-y-12 pb-12">
         <Diagnostic />
         <LossSection />
         <Solution />
