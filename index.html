@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Google AI Studio App</title>
+    <script>
+      // Prevent "Cannot set property fetch of #<Window> which has only a getter" 
+      // caused by a conflict between React 19's fetch polyfill and Vercel Analytics/Toolbar.
+      const origDefineProperty = Object.defineProperty;
+      Object.defineProperty = function(obj, prop, desc) {
+        if (obj === window && prop === 'fetch' && desc && !desc.set && desc.get) {
+          let currentValue = undefined;
+          const originalGet = desc.get;
+          desc.get = function() {
+            return currentValue !== undefined ? currentValue : originalGet.call(this);
+          };
+          desc.set = function(v) {
+            currentValue = v;
+          };
+          desc.configurable = true;
+        }
+        return origDefineProperty(obj, prop, desc);
+      };
+    </script>
   </head>
   <body>
     <div id="root"></div>
