@@ -57,9 +57,9 @@ export function Hero() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]">
-            Votre image ne reflète pas <br className="hidden sm:block" />
+            Vous perdez des clients <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#6c63ff]">
-              votre niveau.
+              sans le savoir.
             </span>
           </h1>
 
@@ -70,12 +70,19 @@ export function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 items-center lg:items-start justify-center lg:justify-start w-full">
-            <button className="group relative inline-flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-500 ease-out w-fit rounded-full bg-[#ff6b6b] border border-[#ff6b6b]/40 shadow-[0_0_30px_rgba(255,107,107,0.4)] hover:shadow-[0_0_50px_rgba(255,107,107,0.7)] hover:bg-[#ff5252] hover:scale-105 overflow-hidden">
-              <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-black/40 via-transparent to-black/30 opacity-100"></span>
-              <span className="absolute -bottom-8 -left-8 w-32 h-32 bg-white blur-[30px] opacity-20 group-hover:opacity-40 transition-all duration-700 group-hover:-translate-y-4 group-hover:translate-x-4"></span>
-              <span className="relative z-10 flex items-center gap-2 tracking-wide text-lg drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+            <button className="relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-gradient-to-b from-[#6c63ff] to-[#4b45cc] px-10 font-medium text-white shadow-[0_5px_20px_rgba(108,99,255,0.3)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_8px_30px_rgba(108,99,255,0.5)] active:scale-95 group">
+              <span className="relative z-10 flex items-center gap-2 font-semibold tracking-wide">
                 Auditer mon image
+                <motion.span 
+                  className="inline-block"
+                  animate={{ x: [0, 4, 0] }}
+                  transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  →
+                </motion.span>
               </span>
+              <div className="absolute inset-0 rounded-full border border-white/20"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
             </button>
           </div>
         </motion.div>
