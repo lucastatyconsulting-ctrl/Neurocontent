@@ -24,9 +24,14 @@ export function Navbar() {
         </div>
 
         <div>
-          <button className="px-5 py-2 rounded-full bg-white/10 text-white text-sm font-medium hover:bg-white/20 transition-colors border border-white/5">
+          <a 
+            href="https://wa.me/242064603138?text=Bonjour%20Lucas%2C%20j'aimerais%20%C3%A9changer%20et%20comprendre%20comment%20vous%20pouvez%20m'aider."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 rounded-full bg-white/10 text-white text-sm font-medium hover:bg-white/20 transition-colors border border-white/5 inline-block"
+          >
             Contact
-          </button>
+          </a>
         </div>
 
       </div>

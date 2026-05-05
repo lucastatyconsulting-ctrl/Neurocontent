@@ -23,9 +23,14 @@ export function CTA() {
           ou corriger ce qui bloque réellement votre croissance.
         </p>
         
-        <button className="relative z-10 px-8 py-4 rounded-full bg-[#ff6b6b] text-white font-medium text-lg hover:bg-[#ff5252] transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(255,107,107,0.4)] active:scale-95">
+        <a 
+          href="https://wa.me/242064603138?text=Bonjour%20Lucas%2C%20j'aimerais%20%C3%A9changer%20et%20comprendre%20comment%20vous%20pouvez%20m'aider."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative z-10 px-8 py-4 rounded-full bg-[#ff6b6b] text-white font-medium text-lg hover:bg-[#ff5252] transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(255,107,107,0.4)] active:scale-95 inline-block"
+        >
           Auditer mon image maintenant
-        </button>
+        </a>
       </motion.div>
     </section>
   );

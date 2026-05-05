@@ -70,7 +70,12 @@ export function Hero() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 items-center lg:items-start justify-center lg:justify-start w-full">
-            <button className="relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-gradient-to-b from-[#6c63ff] to-[#4b45cc] px-10 font-medium text-white shadow-[0_5px_20px_rgba(108,99,255,0.3)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_8px_30px_rgba(108,99,255,0.5)] active:scale-95 group">
+            <a 
+              href="https://wa.me/242064603138?text=Bonjour%20Lucas%2C%20j'aimerais%20%C3%A9changer%20et%20comprendre%20comment%20vous%20pouvez%20m'aider."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-gradient-to-b from-[#6c63ff] to-[#4b45cc] px-10 font-medium text-white shadow-[0_5px_20px_rgba(108,99,255,0.3)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_8px_30px_rgba(108,99,255,0.5)] active:scale-95 group"
+            >
               <span className="relative z-10 flex items-center gap-2 font-semibold tracking-wide">
                 Auditer mon image
                 <motion.span 
@@ -83,7 +88,7 @@ export function Hero() {
               </span>
               <div className="absolute inset-0 rounded-full border border-white/20"></div>
               <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-            </button>
+            </a>
           </div>
         </motion.div>
 
