@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Background } from './components/Background';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -12,8 +13,24 @@ import { Portfolio } from './components/Portfolio';
 import { FAQ } from './components/FAQ';
 import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
+import { ValidationPage } from './components/ValidationPage';
 
 export default function App() {
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const handleLocationChange = () => {
+      setCurrentPath(window.location.pathname);
+    };
+
+    window.addEventListener('popstate', handleLocationChange);
+    return () => window.removeEventListener('popstate', handleLocationChange);
+  }, []);
+
+  if (currentPath === '/validation') {
+    return <ValidationPage />;
+  }
+
   return (
     <main className="relative min-h-screen selection:bg-[#6c63ff]/30 selection:text-white">
       <Background />
