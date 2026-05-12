@@ -14,6 +14,7 @@ import { FAQ } from './components/FAQ';
 import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
 import { ValidationPage } from './components/ValidationPage';
+import { PreValidationSitePage } from './components/PreValidationSitePage';
 
 export default function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
@@ -29,6 +30,10 @@ export default function App() {
 
   if (currentPath === '/validation') {
     return <ValidationPage />;
+  }
+
+  if (currentPath === '/pre-validation-site') {
+    return <PreValidationSitePage />;
   }
 
   return (
