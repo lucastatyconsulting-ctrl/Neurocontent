@@ -6,7 +6,7 @@ export function PreValidationSitePage() {
     <main className="relative min-h-screen selection:bg-[#6c63ff]/30 selection:text-white flex flex-col">
       <Background />
       
-      <div className="flex-grow flex items-center justify-center pt-32 pb-20 px-6">
+      <div className="flex-grow flex items-center justify-center pt-16 sm:pt-32 pb-20 px-6">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,14 +24,11 @@ export function PreValidationSitePage() {
           </h1>
 
           <div className="space-y-6 text-lg sm:text-xl text-white/70 mb-12 leading-relaxed">
-            <p className="font-medium text-white/90">
-              Votre établissement correspond aux critères d'éligibilité pour la conception de site offerte.
-            </p>
             <p>
               Il reste une dernière étape technique obligatoire avant le lancement de la production. Nous devons vérifier immédiatement que le nom de domaine officiel de votre entreprise n'a pas encore été réservé par un tiers.
             </p>
             <p className="text-white/90 font-medium">
-              Cliquez sur le bouton ci-dessous pour finaliser votre dossier et confirmer la disponibilité de votre adresse en direct avec la direction.
+              Cliquez ci-dessous pour confirmer la disponibilité de votre adresse en direct sur WhatsApp.
             </p>
           </div>
 
