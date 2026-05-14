@@ -33,7 +33,7 @@ export function PreValidationSitePage() {
           </div>
 
           <motion.a 
-            href="https://api.whatsapp.com/send?phone=242064603138&text=Bonjour,%20je%20viens%20de%20finaliser%20ma%20pr%C3%A9-validation%20pour%20le%20site%20offert.%20Je%20souhaite%20v%C3%A9rifier%20la%20disponibilit%C3%A9%20de%20mon%20nom%20de%20domaine.%20Le%20nom%20de%20mon%20entreprise%20est%20%3A%20"
+            href="https://api.whatsapp.com/send?phone=242064603138&text=Bonjour,%20je%20viens%20de%20terminer%20ma%20pr%C3%A9-validation%20pour%20le%20site%20offert.%20Je%20souhaite%20v%C3%A9rifier%20la%20disponibilit%C3%A9%20de%20mon%20nom%20de%20domaine%20pour%20bloquer%20ma%20place."
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
